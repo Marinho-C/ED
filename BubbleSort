@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void BubbleSort(int vetor[], int tam_vetor){
+
+    for(int percorrerVetor = 0; percorrerVetor < tam_vetor - 1; percorrerVetor++){
+
+        for(int notaAtual = 0; notaAtual < tam_vetor - 1 - percorrerVetor; notaAtual++){
+
+            if(vetor[notaAtual] > vetor[notaAtual + 1]){
+
+                int guardar = vetor[notaAtual];
+                vetor[notaAtual] = vetor[notaAtual + 1];
+                vetor[notaAtual + 1] = guardar;
+            }
+        }
+    }
+}
+
+int main(){
+    int vetor[] = {7,8,4,5,2,3};
+    int tam_vetor = 6;
+
+    BubbleSort(vetor, tam_vetor);
+
+    for(int i = 0; i < tam_vetor; i++){
+        printf("%d ", vetor[i]);
+    }
+
+    return 0;
+}
