@@ -1,0 +1,21 @@
+/*Defina uma estrutura em C chamada Aluno com os campos nome e nota. Implemente
+o Selection Sort para ordenar um vetor de Aluno em ordem crescente de nota. Explique
+como o algoritmo manipula os campos da estrutura durante a ordenação.*/
+
+#include <stdio.h>
+#include <string.h>
+
+struct Aluno {
+    char nome[50];
+    int nota;
+};
+
+void selectionSort(struct Aluno vetor[], int tamanho_vetor) {
+
+    for(int valorAtual = 0; valorAtual<tamanho_vetor-1; valorAtual++){
+        int menor = valorAtual;
+
+        for(int proxIndice = menor + 1; proxIndice < tamanho_vetor; proxIndice){
+
+}
+    }    
